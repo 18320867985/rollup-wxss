@@ -75,22 +75,7 @@ var jsFileFormat = "umd";
 
 gulp.task('release', ['concat'], function() {
 
-	//**是所以文件夹
-	//*.*是所以文件
-	//gulp.src是查找文件
-	//pipe是进入流管道
-	//gulp.dest() 是复制文件
-
     gulp.src('./wxss/style/pages.wxss').pipe(minCss()).pipe(gulp.dest('./wxss/style')); //复制css
-
-	//gulp.src(['./src/**/*.html']).pipe(gulp.dest('./dist')); //复制html
-
-	//gulp.src('./src/js/**/*.js').pipe(minJs()).pipe(gulp.dest('./dist/js/')); //复制js
-	//gulp.src('./src/images/**/*.*')
-	//	//.pipe(img())                     // 压缩图片
-	//	.pipe(gulp.dest('./dist/images/')); //复制img
-	//gulp.src('./src/css/font/**/*.*').pipe(minCss()).pipe(gulp.dest('./dist/css/font')); //复制font
-	//gulp.src(['./src/json/**/*.json']).pipe(gulp.dest('./dist/json')); //json
 
 });
 
@@ -112,10 +97,6 @@ gulp.task("scss", function() {
 });
 
 
-gulp.task("html", function() {
-	//重启服务器	
-	gulp.src(paths.htmlPath).pipe(connect.reload());
-});
 
 //开启http服务器
 gulp.task('connect', function() {
@@ -132,12 +113,7 @@ gulp.task('connect', function() {
  * 1. gulp.watch(path,task);
  * 2.gulp.watch(path,function(){});
  */
-gulp.task("watch", ['connect', "scss", "build"], function() {
-
-	//合拼压缩js文件
-	watch(paths.jsPath, function() {
-        gulp.start("build");
-	});
+gulp.task("watch", ['connect', "scss"], function() {
 
 	//sass合并压缩css文件
 	//gulp.watch(paths.scssPath, ['scss']);
@@ -146,48 +122,5 @@ gulp.task("watch", ['connect', "scss", "build"], function() {
 		gulp.start("scss");
 		
 	});
-
-	//监听html
-	watch(paths.htmlPath, function() {
-		gulp.start("html");
-	});
-
-});
-
-
-gulp.task('build', async function() {
-	const bundle = await rollup.rollup({
-		input: './src/js-dev/app.js',
-
-		/* 默认情况下，模块的上下文 - 即顶级的this的值为undefined。您可能需要将其更改为其他内容，如 'window'*/
-		context: "window",
-		plugins: [
-			
-			vue(),
-			vembedCss(),
-			/*commonjs 转换 es6*/
-			resolve(),
-			commonjs(),  
-
-			babel({
-				exclude: 'node_modules/**',
-				presets: ["es2015-rollup"]
-			}),
-			
-			//uglify(), // 使用uglify压缩js 不能output 输出 format: 'es' 格式 否会报错
-
-		],
-	});
-
-	await bundle.write({
-		file: './src/js/' + jsName + '.js',
-		format: jsRootName,
-		name: jsFileFormat,
-		//sourcemap: true,
-		strict: true, //在生成的包中省略`"use strict";`
-	});
-	
-	
-	gulp.src(paths.jsPath).pipe(connect.reload());
 
 });
