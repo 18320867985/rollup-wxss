@@ -1,0 +1,38 @@
+<!--index.wxml-->
+
+<view class="page">
+
+  <view class="index">
+
+    <!--搜索框-->
+    <view class="index-search">
+
+    <view class="index-search-l">
+       <text class="home-search-l-icon iconfont iconloaction"></text>
+      <text class="home-search-l-txt">全国</text>
+    </view>
+
+    <view class="index-search-r">
+        <text class="iconfont iconaui-icon-search"></text>
+        <text>搜索你想要的原料</text>
+    </view>
+    
+    </view>
+
+    <!--轮播图-->
+    <view class="index-swiper"></view>
+
+    <!--列表菜单-->
+    <view class="index-nav"></view>
+
+    <!--下拉列表-->
+    <view class="index-list"></view>
+
+  </view>
+
+  <!--置顶-->
+  <view class="zhiding {{zhiding===true? 'active': ''}} " bindtap='evViewScrollTop'>
+    <icon class="iconfont iconzhiding "></icon>
+  </view>
+
+</view>

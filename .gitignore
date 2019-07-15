@@ -1,0 +1,17 @@
+
+#不提交的版本控制文件
+
+#  node server Dependency directory
+/node_modules
+
+#  node  html Dependency directory
+/html/node_modules
+
+#  node  html-webpack Dependency directory
+/html-webpack/node_modules
+
+# Visual Studio  Dependency directory
+/.vs
+
+# multiModuleSetting
+multiModuleSetting.js
