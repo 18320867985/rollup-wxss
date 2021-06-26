@@ -1,3 +1,4 @@
+
 //1. 全局安装 gulp： $ npm install --global gulp
 //2. 作为项目的开发依赖（devDependencies）安装：$ npm install --save-dev gulp
 //3. 在项目根目录下创建一个名为 gulpfile.js 的文件：var gulp = require('gulp');
@@ -17,17 +18,9 @@ var rename = require("gulp-rename"); // npm install gulp-rename --save-dev  重�
 var concat = require('gulp-concat'); //npm install gulp-concat --save-dev  整合文件
 var minHtml = require('gulp-htmlmin'); //npm install gulp-htmlmin --save-dev 压缩html，可以压缩页面javascript、css，去除页面空格、注释，删除多余属性等操作
 
-
 var rollup = require('rollup');
 var babel = require('rollup-plugin-babel');
-var uglify = require('rollup-plugin-uglify');
-var resolve = require('rollup-plugin-node-resolve');
-var commonjs = require('rollup-plugin-commonjs');
-var json = require("rollup-plugin-json");
 
-
-var vue = require('rollup-plugin-vue');
-var vembedCss = require('rollup-plugin-embed-css');
 
 /*
  * .pipe(postcss([autoprefixer]))  // 自动添加css3缀-webkit-  适合用于手机端 
@@ -57,30 +50,22 @@ gulp.task('del', function(cd) {
 var paths = {
 
     // sass文件
-    scssPath: ['./src/css-dev/**/*.scss'],
-
-    allscss: ['./src/css-dev/scss/all.scss'],
-
-    htmlPath: ['./src/**/*.html'],
-
-    jsPath: ['./src/js-dev/**/*.js']
+    scssPath: ['./miniApp/wxss/**/*.scss'],
+	allscss: ['./miniApp/wxss/scss/all.scss'],
 
 };
 
 
-var jsName = "mobile";
 var cssName = "pages";
-var jsRootName = "umd";
-var jsFileFormat = "umd";
 
 gulp.task('release', ['concat'], function() {
 
-    gulp.src('./wxss/style/pages.wxss').pipe(minCss()).pipe(gulp.dest('./wxss/style')); //复制css
+    gulp.src('./wxss/style/pages.wxss').pipe(minCss()).pipe(gulp.dest('./wxss/')); // 复制css
 
 });
 
 // 发布的合并js和css文件
-gulp.task("concat", ["scss", "build"]);
+gulp.task("concat", ["scss"]);
 
 
 //scss合并css文件
@@ -90,18 +75,17 @@ gulp.task("scss", function() {
 		.pipe(sass().on('error', sass.logError))     // sass编译
 		.pipe(postcss([autoprefixer]))          // 自动添加css3缀-webkit-  适合用于手机端 
 		.pipe( rename(cssName+'.wxss') )         // 压缩css文件
-        .pipe(gulp.dest('./wxss/style'));
+        .pipe(gulp.dest('./miniApp/wxss/'));
 
 	gulp.src(paths.scssPath).pipe(connect.reload());
 
 });
 
 
-
 //开启http服务器
 gulp.task('connect', function() {
 	connect.server({
-		root: 'src',
+		root: 'miniApp',
 		livereload: true,
 		port: 8888
 	});
