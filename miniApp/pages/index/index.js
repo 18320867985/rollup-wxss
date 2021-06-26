@@ -1,5 +1,5 @@
 var app = getApp();
-var common = require("../../utils/common.js");
+
 
 Page({
 
@@ -7,18 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgurl: app.imgurl,
   
-    // 搜索的头部
-    searchBg: 0,
-    scrollVal: 300,
-    zhiding: false,
-    searchInputBg: 0.8,
-
-    province: "",
-    city: "",
-    showCity: "",
-    lists: [],
 
   },
 

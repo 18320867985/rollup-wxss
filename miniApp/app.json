@@ -1,39 +1,13 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/shop/shop",
-    "pages/me/me"
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "backgroundColor": "#F2F2F2",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "塑金商城",
+    "navigationBarTitleText": "miniAppUi",
     "navigationBarTextStyle": "black"
-  },
-  "tabBar": {
-    "borderStyle": "black",
-    "selectedColor": "#E64340",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "img/home.png",
-        "selectedIconPath": "img/home-active.png"
-      },
-      {
-        "pagePath": "pages/shop/shop",
-        "text": "现货商城 ",
-        "iconPath": "img/shop.png",
-        "selectedIconPath": "img/shop-active.png"
-      },
-      {
-        "pagePath": "pages/me/me",
-        "text": "我的",
-        "iconPath": "img/me.png",
-        "selectedIconPath": "img/me-active.png"
-      }
-    ]
   },
   "networkTimeout": {
     "request": 35000

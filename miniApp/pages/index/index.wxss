@@ -1,9 +1,1 @@
 /**index.wxss**/
-
-page, .page {
-  height: 100%;
-}
-
-.index-search{
-  
-}
