@@ -5,9 +5,7 @@
   "main": "filefile.js",
   "author": "hqs",
   "scripts": {
-    "del": "gulp  del",
-    "dev": "gulp watch",
-    "build": "gulp del && gulp release "
+    "dev": "gulp watch"
   },
   "license": "ISC",
   "dependencies": {},

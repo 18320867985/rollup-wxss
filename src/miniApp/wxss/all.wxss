@@ -1,0 +1,7 @@
+.index {
+  font-size: 66rpx;
+  color: blue; }
+
+.test {
+  font-size: 99rpx;
+  color: red; }

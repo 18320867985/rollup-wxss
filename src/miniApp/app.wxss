@@ -1,5 +1,5 @@
 /**app.wxss**/
 
 @import './wxss/iconfont.wxss';
-@import'./wxss/pages.wxss';
+@import'./wxss/pages/all.wxss';
 
