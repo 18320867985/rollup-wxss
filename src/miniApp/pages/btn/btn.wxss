@@ -1,0 +1,6 @@
+/* pages/btn/btn.wxss */
+.btn-tip-ttl{
+
+  font-size: 32rpx;
+  margin-bottom: 30rpx;
+}

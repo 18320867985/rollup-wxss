@@ -1,0 +1,83 @@
+<view class="m-aside">
+  <scroll-view class="m-aside-l" scroll-y="true">
+  <block wx:for="{{asideList}}">
+   <view class="m-aside-l-item  {{asideIndex===index?'active':''}} " bindtap="selectedIndex" data-index="{{index}}"> {{item}}</view>
+   </block> 
+</scroll-view>
+  <view class="m-aside-r">
+    <block wx:for="{{asideList}}"> 
+      <scroll-view class="m-aside-r-item {{asideIndex===index?'in':''}} "  data-index="{{index}}" scroll-y="true" bindscrolltolower="scrolltolower0" paging-enabled="true">
+      <view class="_ttl">   {{item}}</view>
+        <view class="_content">
+
+          <view class="_content-item">
+            <navigator url="">
+            <image src="/imgs/a.jpg" mode="widthFix" lazy-load="true"></image>
+            </navigator>
+          </view>
+
+          <view class="_content-item">
+            <navigator url="">
+            <image src="/imgs/b.jpg" mode="widthFix"  lazy-load="true"></image>
+            </navigator>
+          </view>
+
+          <view class="_content-item">
+            <navigator url="">
+            <image src="/imgs/c.jpg" mode="widthFix"  lazy-load="true"></image>
+            </navigator>
+          </view>
+
+          <view class="_content-item">
+            <navigator url="">
+            <image src="/imgs/a.jpg" mode="widthFix"  lazy-load="true"></image>
+            </navigator>
+          </view>
+
+          <view class="_content-item">
+            <navigator url="">
+            <image src="/imgs/b.jpg" mode="widthFix"  lazy-load="true"></image>
+            </navigator>
+          </view>
+          <view class="_content-item">
+            <navigator url="">
+            <image src="/imgs/b.jpg" mode="widthFix"  lazy-load="true"></image>
+            </navigator>
+          </view>
+          <view class="_content-item">
+            <navigator url="">
+            <image src="/imgs/b.jpg" mode="widthFix"  lazy-load="true"></image>
+            </navigator>
+          </view>
+
+          <view class="_content-item">
+            <navigator url="">
+            <image src="/imgs/c.jpg" mode="widthFix"  lazy-load="true"></image>
+            </navigator>
+          </view>
+          
+          <view class="_content-item">
+            <navigator url="">
+            <image src="/imgs/a.jpg" mode="widthFix"  lazy-load="true"></image>
+            </navigator>
+          </view>
+
+          <view class="_content-item">
+            <navigator url="">
+            <image src="/imgs/b.jpg" mode="widthFix"  lazy-load="true"></image>
+            </navigator>
+          </view>
+
+          <view class="_content-item">
+            <navigator url="">
+            <image src="/imgs/c.jpg" mode="widthFix"  lazy-load="true"></image>
+            </navigator>
+          </view>
+
+        </view>
+      <view>
+      </view>
+     </scroll-view>
+    </block> 
+  </view>
+</view>

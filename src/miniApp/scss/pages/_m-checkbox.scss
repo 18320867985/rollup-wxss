@@ -1,0 +1,12 @@
+@import "../var.scss";
+
+/* m-checkbox */
+.m-checkbox+.m-checkbox{
+margin-left: 30rpx;
+}
+.m-checkbox.m-checkbox-block{
+  display: block;
+  &+&{
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,54 @@
+<view class="m-progress">
+  
+  <view class="m-progress-box">
+      <progress percent="20" show-info active stroke-width="3" color="{{colors.primary}}" />
+    </view>
+
+    <view class="m-progress-box">
+      <progress percent="40"  active stroke-width="3" show-info  color="{{colors.success}}" />
+    </view>
+
+    <view class="m-progress-box">
+      <progress percent="60" active show-info color="{{colors.warning}}" stroke-width="3" />
+    </view>
+
+    <view class="m-progress-box">
+      <progress percent="80" color="{{colors.danger}}" show-info  active stroke-width="3" />
+    </view>
+
+    <view  style="margin:50rpx 0;"></view>
+
+    <view class="m-progress-box">
+      <progress percent="20" show-info active stroke-width="10" color="{{colors.primary}}" />
+    </view>
+
+    <view class="m-progress-box">
+      <progress percent="40" active stroke-width="10" show-info  color="{{colors.success}}" />
+    </view>
+
+    <view class="m-progress-box">
+      <progress percent="60" active show-info color="{{colors.warning}}" stroke-width="10" />
+    </view>
+
+    <view class="m-progress-box">
+      <progress percent="80" color="{{colors.danger}}" show-info  active stroke-width="10" />
+    </view>
+
+    <view  style="margin:50rpx 0;"></view>
+
+<view class="m-progress-box">
+  <progress percent="100" show-info active stroke-width="20" color="{{colors.primary}}" />
+</view>
+
+<view class="m-progress-box">
+  <progress percent="100"  stroke-width="20" show-info  active color="{{colors.success}}" />
+</view>
+
+<view class="m-progress-box">
+  <progress percent="100" active show-info  color="{{colors.warning}}" stroke-width="20" />
+</view>
+
+<view class="m-progress-box">
+  <progress percent="100" color="{{colors.danger}}" show-info  active stroke-width="20" />
+</view>
+</view>

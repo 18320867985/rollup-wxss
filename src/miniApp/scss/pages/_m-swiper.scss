@@ -1,0 +1,19 @@
+@import "../var.scss";
+// swiper
+
+.m-swiper{
+height: 300rpx;
+}
+.m-swiper-item{
+height: 100%;
+
+navigator{
+  display: block;
+  height: 100%;
+}
+
+image{
+  height: 100%;
+  width: 100%;
+}
+}

@@ -1,16 +1,25 @@
 var app = getApp();
 
-
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
-
+    mTableViewIndex:0
   },
-
+  mTableViewCell:function(e){
+    var index= Number( e.currentTarget.dataset.index)||0;
+    if(index===this.data.mTableViewIndex){
+        this.setData({
+          mTableViewIndex:null
+        });
+        return;
+    }
+    this.setData({
+        mTableViewIndex:index
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

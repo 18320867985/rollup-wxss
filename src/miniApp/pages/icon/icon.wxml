@@ -1,0 +1,654 @@
+<view>
+  <view class="icon-cnt">
+
+<view class="icon-item">
+    <icon class="icon icon-volume "></icon>
+    <view class="name">icon-volume</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-wifi"></icon>
+    <view class="name">icon-wifi</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-microphone"></icon>
+    <view class="name">icon-microphone</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-sun"></icon>
+    <view class="name">icon-sun</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-lockclose"></icon>
+    <view class="name">icon-lockclose</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-bluetooth"></icon>
+    <view class="name">icon-bluetooth</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-kod-qr"></icon>
+    <view class="name">icon-kod-qr</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-moon"></icon>
+    <view class="name">icon-moon</view>
+
+</view>
+
+
+
+
+
+<view class="icon-item">
+    <icon class="icon icon-qr-scanner"></icon>
+    <view class="name">icon-qr-scanner</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon  icon-minus-sign"></icon>
+    <view class="name">icon-minus-sign</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-plussign"></icon>
+    <view class="name">icon-plussign</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-music"></icon>
+    <view class="name">icon-music</view>
+
+</view>
+
+
+<view class="icon-item">
+    <icon class="icon icon-option-horizontal"></icon>
+    <view class="name">icon-option-horizontal</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-option-vertical"></icon>
+    <view class="name">icon-option-vertical</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-oksign"></icon>
+    <view class="name">icon-oksign</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-remove-sign"></icon>
+    <view class="name">icon-remove-sign</view>
+
+</view>
+
+
+
+
+<view class="icon-item">
+    <icon class="icon icon-resize-fviewl"></icon>
+    <view class="name">icon-resize-fviewl</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-resize-small "></icon>
+    <view class="name">icon-resize-small</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-resize-horizontal"></icon>
+    <view class="name">icon-resize-horizontal</view>
+
+</view>
+
+
+<view class="icon-item">
+    <icon class="icon icon-resize-vertical"></icon>
+    <view class="name">icon-resize-vertical</view>
+
+</view>
+
+
+
+<view class="icon-item">
+    <icon class="icon icon-question-sign"></icon>
+    <view class="name">icon-question-sign</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-sort"></icon>
+    <view class="name">icon-sort</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-signal"></icon>
+    <view class="name">icon-signal</view>
+
+</view>
+
+
+<view class="icon-item">
+    <icon class="icon icon-share-alt1"></icon>
+    <view class="name">icon-share-alt1</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-share-alt2"></icon>
+    <view class="name">icon-share-alt2</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-share-alt"></icon>
+    <view class="name">icon-share-alt</view>
+
+</view>
+
+
+<view class="icon-item">
+    <icon class="icon icon-usd"></icon>
+    <view class="name">icon-usd</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-rmb"></icon>
+    <view class="name">icon-rmb</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-menu-left"></icon>
+    <view class="name">icon-menu-left</view>
+
+</view>
+<view class="icon-item">
+    <icon class="icon icon-menu-right"></icon>
+    <view class="name">icon-menu-right</view>
+
+</view>
+
+
+
+<view class="icon-item">
+    <icon class="icon icon-menu-up"></icon>
+    <view class="name">icon-menu-up</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-menu-down"></icon>
+    <view class="name">icon-menu-down</view>
+
+</view>
+
+
+
+<view class="icon-item">
+    <icon class="icon icon-triangle-bottom"></icon>
+    <view class="name">icon-triangle-bottom</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-triangle-top"></icon>
+    <view class="name">icon-triangle-top</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-triangle-left"></icon>
+    <view class="name">icon-triangle-left</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-triangle-right"></icon>
+    <view class="name">icon-triangle-right</view>
+
+</view>
+
+
+<view class="icon-item">
+    <icon class="icon icon-warning-sign"></icon>
+    <view class="name">icon-warning-sign</view>
+
+</view>
+
+
+<view class="icon-item">
+    <icon class="icon icon-off-btn"></icon>
+    <view class="name">icon-off-btn</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-setting"></icon>
+    <view class="name">icon-setting</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-cloud"></icon>
+    <view class="name">icon-cloud</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-calendar"></icon>
+    <view class="name">icon-calendar</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-play-btn"></icon>
+    <view class="name">icon-play-btn</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-pause-btn"></icon>
+    <view class="name">icon-pause-btn</view>
+
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-folderopen"></icon>
+    <view class="name">icon-folderopen</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-star"></icon>
+    <view class="name">icon-star</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-Retweet"></icon>
+    <view class="name">icon-Retweet</view>
+
+</view>
+<view class="icon-item">
+    <icon class="icon icon-filter"></icon>
+    <view class="name">icon-filter</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-eye-close"></icon>
+    <view class="name">icon-eye-close</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-eyeopen"></icon>
+    <view class="name">icon-eyeopen</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-zoomin"></icon>
+    <view class="name">icon-zoomin</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-zoomout"></icon>
+    <view class="name">icon-zoomout</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-pushpin"></icon>
+    <view class="name">icon-pushpin</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-trash"></icon>
+    <view class="name">icon-trash</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-comment"></icon>
+    <view class="name">icon-comment</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-cc-bell-o"></icon>
+    <view class="name">icon-cc-bell-o</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-exclama"></icon>
+    <view class="name">icon-exclama</view>
+
+</view>
+
+
+
+<view class="icon-item">
+    <icon class="icon icon-heart"></icon>
+    <view class="name">icon-heart</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-phone"></icon>
+    <view class="name">icon-phone</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-earphone"></icon>
+    <view class="name">icon-earphone</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-pencil"></icon>
+    <view class="name">icon-pencil</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-time"></icon>
+    <view class="name">icon-time</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-play"></icon>
+    <view class="name">icon-play</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-pause"></icon>
+    <view class="name">icon-pause</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-home"></icon>
+    <view class="name">icon-home</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-cloudup"></icon>
+    <view class="name">icon-cloudup</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-clouddown"></icon>
+    <view class="name">icon-clouddown</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-search"></icon>
+    <view class="name">icon-search</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-gbp"></icon>
+    <view class="name">icon-gbp</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-gift"></icon>
+    <view class="name">icon-gift</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-ok"></icon>
+    <view class="name">icon-ok</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-remove"></icon>
+    <view class="name">icon-remove</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-star-empty"></icon>
+    <view class="name">icon-star-empty</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-plane"></icon>
+    <view class="name">icon-plane</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-comment1"></icon>
+    <view class="name">icon-comment1</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-suijisenviewn"></icon>
+    <view class="name">icon-suijisenviewn</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-shop-cart"></icon>
+    <view class="name">icon-shop-cart</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-fast-backward"></icon>
+    <view class="name">icon-fast-backward</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-fast-forward"></icon>
+    <view class="name">icon-fast-forward</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-step-backward"></icon>
+    <view class="name">icon-step-backward</view>
+
+</view>
+
+
+
+<view class="icon-item">
+    <icon class="icon icon-step-forward"></icon>
+    <view class="name">icon-step-forward</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-minus"></icon>
+    <view class="name">icon-minus</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-plus"></icon>
+    <view class="name">icon-plus</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-user"></icon>
+    <view class="name">icon-user</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-wrench"></icon>
+    <view class="name">icon-wrench</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-thumbs-up"></icon>
+    <view class="name">icon-thumbs-up</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-thumbs-down"></icon>
+    <view class="name">icon-thumbs-down</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-hand-up "></icon>
+    <view class="name">icon-hand-up</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-hand-down"></icon>
+    <view class="name">icon-hand-down</view>
+
+</view>
+
+
+<view class="icon-item">
+    <icon class="icon icon-hand-right"></icon>
+    <view class="name">icon-hand-right</view>
+
+</view>
+
+
+<view class="icon-item">
+    <icon class="icon icon-hand-left"></icon>
+    <view class="name">icon-hand-left</view>
+
+</view>
+
+
+<view class="icon-item">
+    <icon class="icon icon-ban-circle"></icon>
+    <view class="name">icon-ban-circle</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-eject"></icon>
+    <view class="name">icon-eject</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-hd-video"></icon>
+    <view class="name">icon-hd-video</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-info-sign"></icon>
+    <view class="name">icon-info-sign</view>
+
+</view>
+
+
+<view class="icon-item">
+    <icon class="icon icon-menu-hamburger"></icon>
+    <view class="name">icon-menu-hamburger</view>
+
+</view>
+<view class="icon-item">
+    <icon class="icon icon-loading"></icon>
+    <view class="name">icon-loading</view>
+
+</view>
+
+
+<view class="icon-item">
+    <icon class="icon icon-radiobox"></icon>
+    <view class="name">icon-radiobox</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-radiobox-active"></icon>
+    <view class="name">icon-radiobox-active</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-checkbox"></icon>
+    <view class="name">icon-checkbox</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-checkbox-active"></icon>
+    <view class="name">icon-checkbox-active</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-back-left"></icon>
+    <view class="name">icon-back-left</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-back-right"></icon>
+    <view class="name">icon-back-right</view>
+
+</view>
+<view class="icon-item">
+    <icon class="icon icon-dingbu"></icon>
+    <view class="name">icon-dingbu</view>
+
+</view>
+
+<view class="icon-item">
+    <icon class="icon icon-dibu"></icon>
+    <view class="name">icon-dibu</view>
+
+</view>
+
+  </view>
+</view>

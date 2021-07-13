@@ -1,0 +1,12 @@
+@import "../var.scss";
+
+/* m-radiobox */
+.m-radiobox+.m-radiobox{
+margin-left: 30rpx;
+}
+.m-radiobox.m-radiobox-block{
+  display: block;
+  &+&{
+    margin-left: 0;
+  }
+}

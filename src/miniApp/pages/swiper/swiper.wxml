@@ -1,0 +1,30 @@
+
+   
+
+  <view class="m-list">
+    
+    <view class="m-list-item">
+      <view class="m-list-item-l">指示点</view>
+          <view class="m-list-item-r">
+            <switch checked="{{indicatorDots}}" bindchange="changeIndicatorDots" />
+          </view>
+    </view>
+    <view class="m-list-item">
+      <view class="m-list-item-l">自动播放</view>
+      <view class="m-list-item-r">
+        <switch checked="{{autoplay}}" bindchange="changeAutoplay" />
+      </view>
+    </view>
+  </view>
+
+  <swiper class="m-swiper" indicator-dots="{{indicatorDots}}"
+  circular  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color='#E64340'>
+        <block wx:for="{{imgs}}" wx:key="*this">
+          <swiper-item class="m-swiper-item">
+            <navigator>
+             <image  src="{{item}}"></image>
+            </navigator>
+          </swiper-item>
+        </block>
+      </swiper>
+

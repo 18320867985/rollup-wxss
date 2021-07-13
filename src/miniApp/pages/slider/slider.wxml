@@ -1,0 +1,48 @@
+<view class="m-list">
+  <view class="m-list-item">设置left/right icon</view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+      <slider bindchange="slider1change" left-icon="cancel" right-icon="success_no_circle"  activeColor="{{colors.success}}"  block-color="{{colors.success}}" />
+      </view>
+  </view>
+</view>
+
+<view class="m-list">
+  <view class="m-list-item">显示当前的value值</view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+      <slider bindchange="slider3change" show-value activeColor="{{colors.success}}"  block-color="{{colors.success}}" />
+      </view>
+  </view>
+</view>
+<view class="m-list">
+  <view class="m-list-item"> 设置step为5</view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+      <slider bindchange="slider2change" step="5" activeColor="{{colors.success}}"  show-value  block-color="{{colors.success}}" />
+      </view>
+  </view>
+</view>
+
+<view class="m-list">
+  <view class="m-list-item"> 设置最小50/最大值200</view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+    
+      <slider bindchange="slider4change" min="50" max="200" show-value activeColor="{{colors.success}}"  block-color="{{colors.success}}" />
+      </view>
+  </view>
+</view>
+
+
+<view class="m-list">
+  <view class="m-list-item">设置不同样式</view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+      <slider bindchange="" show-value  activeColor="{{colors.primary}}"  block-color="{{colors.primary}}" />
+      <slider bindchange="" show-value  activeColor="{{colors.success}}"  block-color="{{colors.success}}" />
+      <slider bindchange="" show-value  activeColor="{{colors.warning}}"  block-color="{{colors.warning}}" />
+      <slider bindchange="" show-value  activeColor="{{colors.danger}}"  block-color="{{colors.danger}}" />
+      </view>
+  </view>
+</view>

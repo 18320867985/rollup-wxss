@@ -1,0 +1,141 @@
+
+@import "./var.scss";
+
+page {
+    font-size: $font-size;
+    font-family: $font-family;
+    line-height: $line-height;
+    background: $body-bg;
+    color: $text-df;
+}
+view,text{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0 ;
+}
+
+navigator,
+navigator:link,
+navigator:focus,
+navigator:active{
+    text-decoration: none;
+    color: $text-df; 
+}
+
+navigator.navigator-hover {
+  background: transparent;
+  opacity: 1;
+}
+
+image {
+    display: inline-block;
+}
+
+/*input*/
+input,
+button,
+textarea {
+    outline: none;
+}
+
+input:focus,
+button:focus,
+button:active {
+    outline: none !important;
+}
+
+/*display*/
+.m-hide {
+    display: none;
+}
+
+.m-show {
+    display: block;
+}
+
+.text-center{
+    text-align:center;
+
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/*ellipsis*/
+.elp-no {
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.elp {
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.elp-1 {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical
+}
+
+.elp-2 {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+
+.elp-3 {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical
+}
+
+
+.elp-4 {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical
+}
+
+
+/*IE10+*/
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: $text-placeholer !important;
+}
+
+/*Firefox4-18*/
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: $text-placeholer !important;
+}
+
+/*Firefox19+*/
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: $text-placeholer !important;
+}
+

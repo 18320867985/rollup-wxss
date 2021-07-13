@@ -1,0 +1,43 @@
+<view  style=" padding:20rpx;">
+            <button type="" class="m-btn ">默认</button>
+            <button type="" class="m-btn m-btn-primary  ">蓝色</button>
+            <button type="" class="m-btn m-btn-success ">绿色</button>
+            <button type="" class="m-btn m-btn-warning ">黄色</button>
+            <button type="" class="m-btn m-btn-danger ">红色</button>
+
+            <view class="btn-tip-ttl">禁用的按钮disabled</view>
+
+            <button type="" class="m-btn disabled">默认</button>
+            <button type="" class="m-btn m-btn-primary  disabled">蓝色</button>
+            <button type="" class="m-btn m-btn-success disabled ">绿色</button>
+            <button type="" class="m-btn m-btn-warning disabled ">黄色</button>
+            <button type="" class="m-btn m-btn-danger disabled">红色</button>
+
+            <view class="btn-tip-ttl">若希望无底色、有边框的按钮，仅需增加.m-btn-outline类即可，代码如下：</view>
+
+            <button type="" class="m-btn m-btn-primary   m-btn-outline">蓝色</button>
+            <button type="" class="m-btn m-btn-success m-btn-outline ">绿色</button>
+            <button type="" class="m-btn m-btn-warning  m-btn-outline">黄色</button>
+            <button type="" class="m-btn m-btn-danger m-btn-outline">红色</button>
+
+            <view class="btn-tip-ttl">禁用的无底色、有边框的按钮disabled</view>
+
+            <button type="" class="m-btn m-btn-primary   m-btn-outline disabled">蓝色</button>
+            <button type="" class="m-btn m-btn-success   m-btn-outline disabled ">绿色</button>
+            <button type="" class="m-btn m-btn-warning   m-btn-outline disabled ">黄色</button>
+            <button type="" class="m-btn m-btn-danger   m-btn-outline disabled">红色</button>
+
+            <view class="btn-tip-ttl">块级按钮</view>
+            <button type="" class="m-btn m-btn-block ">默认</button>
+            <button type="" class="m-btn m-btn-primary m-btn-block ">蓝色</button>
+            <button type="" class="m-btn m-btn-success m-btn-block">绿色</button>
+            <button type="" class="m-btn m-btn-warning m-btn-block">黄色</button>
+            <button type="" class="m-btn m-btn-danger m-btn-block">红色</button>
+
+            <view class="btn-tip-ttl">无底色、有边框的块级按钮</view>
+
+            <button type="" class="m-btn m-btn-primary   m-btn-outline  m-btn-block">蓝色</button>
+            <button type="" class="m-btn m-btn-success m-btn-outline  m-btn-block">绿色</button>
+            <button type="" class="m-btn m-btn-warning  m-btn-outline  m-btn-block">黄色</button>
+            <button type=""  class="m-btn m-btn-danger m-btn-outline  m-btn-block">红色</button>
+</view>

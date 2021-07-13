@@ -1,0 +1,34 @@
+<view class="m-list">
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+          <radio-group bindchange="checkboxChange1">
+                <label class="m-radiobox" wx:for="{{items}}">
+                  <radio  value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+                  
+              </label>
+          </radio-group>
+        </view>
+  </view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+         选择的值为:[{{values1}}]
+    </view>
+  </view>
+</view>
+
+<view class="m-list">
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+          <radio-group bindchange="checkboxChange2" >
+                <label class="m-radiobox m-radiobox-block" wx:for="{{items}}">
+                  <radio  value="{{item.value}}" checked="{{item.checked}}" />{{item.name}}
+              </label>
+          </radio-group>
+        </view>
+  </view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+         选择的值为:[{{values2}}]
+    </view>
+  </view>
+</view>

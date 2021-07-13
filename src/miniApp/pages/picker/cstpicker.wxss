@@ -1,0 +1,3 @@
+.m-picker.m-picker-inline{
+  width:300rpx;
+}

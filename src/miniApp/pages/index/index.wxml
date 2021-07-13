@@ -1,5 +1,237 @@
-<!--index.wxml-->
-<view class="index">
-index
-<view class="p">pages</view>
+<view class="m-table-view m-table-view-rd">
+
+  <view class="m-table-view-cell {{ mTableViewIndex===0?'in':''}}" >
+    <view class="m-table-view-ttl"  data-index="0"  catchtap="mTableViewCell">
+      <view class="_ttl">
+         list组件
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator  class="ink-no" url="/pages/list/list">list列表</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+     
+    </view>
+     
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex===1?'in':''}}" >
+    <view class="m-table-view-ttl" data-index="1" bindtap="mTableViewCell" >
+      <view class="_ttl">
+         tableView组件
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator  url="/pages/tableView/tableView">列表</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+     
+    </view>
+     
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex===2?'in':''}}"  >
+    <view class="m-table-view-ttl" data-index="2" bindtap="mTableViewCell">
+      <view class="_ttl">
+        按钮组件
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator url="/pages/btn/btn">按钮</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+       
+    </view>
+     
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex===3?'in':''}}" >
+    <view class="m-table-view-ttl"  data-index="3" bindtap="mTableViewCell">
+      <view class="_ttl">
+        icon字体图标
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator url="/pages/icon/icon">icon字体图标</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+       
+    </view>
+     
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex===4?'in':''}}"  >
+    <view class="m-table-view-ttl" data-index="4" bindtap="mTableViewCell">
+      <view class="_ttl">
+        input 组件
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator url="/pages/input/input">input 组件1</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+       
+    </view>
+     
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex===5?'in':''}}"  >
+    <view class="m-table-view-ttl" data-index="5" bindtap="mTableViewCell">
+      <view class="_ttl">
+        progress 组件
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator url="/pages/progress/progress">progress 进度条</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+       
+    </view>
+     
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex===6?'in':''}}" >
+    <view class="m-table-view-ttl" data-index="6" bindtap="mTableViewCell" >
+      <view class="_ttl">
+        swiper图片轮播组件
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator url="/pages/swiper/swiper">swiper图片轮播</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+       
+    </view>
+     
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex===7?'in':''}}"  >
+    <view class="m-table-view-ttl" data-index="7" bindtap="mTableViewCell">
+      <view class="_ttl">
+        switch组件
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator url="/pages/switch/switch">switch组件</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+       
+    </view>
+     
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex===8?'in':''}}" >
+    <view class="m-table-view-ttl"  data-index="8" bindtap="mTableViewCell">
+      <view class="_ttl">
+        checkbox组件
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator url="/pages/checkbox/checkbox">checkbox组件</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+       
+    </view>
+     
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex===9?'in':''}}"  >
+    <view class="m-table-view-ttl" data-index="9" bindtap="mTableViewCell">
+      <view class="_ttl">
+        radiobox 组件
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator url="/pages/radiobox/radiobox">radiobox 组件</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+       
+    </view>
+     
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex===10?'in':''}}"  >
+    <view class="m-table-view-ttl" data-index="10" bindtap="mTableViewCell">
+      <view class="_ttl">
+        picker 组件
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator url="/pages/picker/picker">picker 默认</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+        <view class="m-table-view-collapse-cell">
+              <navigator url="/pages/picker/cstpicker">picker 自定义</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+    </view>
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex===11?'in':''}}"  >
+    <view class="m-table-view-ttl" data-index="11" bindtap="mTableViewCell">
+      <view class="_ttl">
+        slider 组件
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator url="/pages/slider/slider">slider 组件</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+      
+    </view>
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex===12?'in':''}}"  >
+    <view class="m-table-view-ttl" data-index="12" bindtap="mTableViewCell">
+      <view class="_ttl">
+        aside 侧边栏
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator url="/pages/aside/aside"> aside 侧边栏</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+      
+    </view>
+  </view>
+
 </view>

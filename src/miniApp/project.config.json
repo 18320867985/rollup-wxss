@@ -4,7 +4,7 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
     "enhance": false,
     "postcss": true,
@@ -41,7 +41,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.7.1",
   "appid": "wx88d2b895ed765b19",
-  "projectname": "newsunjinshop",
+  "projectname": "miniApp",
   "debugOptions": {
     "hidedInDevtools": []
   },

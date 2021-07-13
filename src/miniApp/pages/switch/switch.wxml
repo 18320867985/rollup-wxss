@@ -1,0 +1,40 @@
+
+  <view class="m-list">
+
+    <view class="m-list-item">
+      <view class="m-list-item-l">选择值：{{primaryCheck}}</view>
+          <view class="m-list-item-r">
+            <switch color="{{colors.primary}}" type="{{type}}" checked="{{primaryCheck}}" bindchange="changeCheck" data-name="primaryCheck" />
+          </view>
+    </view>
+
+    <view class="m-list-item">
+      <view class="m-list-item-l">选择值：{{successCheck}}</view>
+          <view class="m-list-item-r">
+            <switch color="{{colors.success}}" type="{{type}}" checked="{{successCheck}}" bindchange="changeCheck" data-name="successCheck" />
+          </view>
+    </view>
+
+    <view class="m-list-item">
+      <view class="m-list-item-l">选择值：{{warningCheck}}</view>
+          <view class="m-list-item-r">
+            <switch color="{{colors.warning}}" type="{{type}}" checked="{{warningCheck}}" bindchange="changeCheck" data-name="warningCheck" />
+          </view>
+    </view>
+    <view class="m-list-item">
+      <view class="m-list-item-l">选择值：{{dangerCheck}}</view>
+          <view class="m-list-item-r">
+            <switch color="{{colors.danger}}" type="{{type}}" checked="{{dangerCheck}}" bindchange="changeCheck" data-name="dangerCheck" />
+          </view>
+    </view>
+
+  </view>
+  
+  <view class="m-list">
+    <view class="m-list-item"  >
+      <view class="m-list-item-l">样式类型：{{type}}</view>
+          <view class="m-list-item-r">
+            <switch color="{{colors.success}}" checked="{{type}}" bindchange="changeType" data-name="type" />
+          </view>
+    </view>
+</view>

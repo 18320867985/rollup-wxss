@@ -1,0 +1,65 @@
+<view class="m-table-view m-table-view-rd">
+  <view class="m-table-view-cell {{mTableViewIndex===0?'in':''}}">
+    <view class="m-table-view-ttl"  data-index="0" bindtap="mTableViewCell" >
+      <view class="_ttl">
+      列表
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator>列表1</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+        <view class="m-table-view-collapse-cell">
+                <navigator>列表2</navigator>
+                <icon class="icon icon-back-right"></icon>
+          </view>
+    </view>
+     
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex==1?'in':''}}" >
+    <view class="m-table-view-ttl" data-index="1" bindtap="mTableViewCell" >
+      <view class="_ttl">
+      列表
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator>列表1</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+        <view class="m-table-view-collapse-cell">
+                <navigator>列表2</navigator>
+                <icon class="icon icon-back-right"></icon>
+          </view>
+    </view>
+     
+  </view>
+
+  <view class="m-table-view-cell {{ mTableViewIndex===2?'in':''}}"  >
+    <view class="m-table-view-ttl" data-index="2" bindtap="mTableViewCell">
+      <view class="_ttl">
+      列表
+      </view>
+      <icon class="icon icon-back-right "></icon>
+    </view>
+    <!--折叠div-->
+    <view class="m-table-view-collapse ">
+       <view class="m-table-view-collapse-cell">
+              <navigator>列表1</navigator>
+              <icon class="icon icon-back-right"></icon>
+        </view>
+        <view class="m-table-view-collapse-cell">
+                <navigator>列表2</navigator>
+                <icon class="icon icon-back-right"></icon>
+          </view>
+    </view>
+     
+  </view>
+
+</view>

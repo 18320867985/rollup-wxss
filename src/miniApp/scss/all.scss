@@ -1,5 +1,16 @@
 
-@import "var.scss";      		       // variable
-@import "./pages/index.scss";
-@import "./pages/test.scss";
-
+@import "var.scss";      // variable
+@import "df.scss"; 
+@import "./pages/m-table-view.scss";
+@import "./pages/m-btn.scss";
+@import "./pages/m-list.scss";
+@import "./pages/m-icon.scss";
+@import "./pages/m-input.scss";
+@import "./pages/_m-progress.scss";
+@import "./pages/_m-swiper.scss";
+@import "./pages/m-switch.scss";
+@import "./pages/m-checkbox.scss";
+@import "./pages/m-radiobox.scss";
+@import "./pages/m-picker.scss";
+@import "./pages/m-slider.scss";
+@import "./pages/m-aside.scss";

@@ -1,4 +1,10 @@
 
+/*
+安装：npm install -g cnpm --registry=https://registry.npm.taobao.org  安装淘宝镜像）用淘宝镜像快！
+
+修改：npm config set registry http://registry.npm.taobao.org
+*/
+
 //1. 全局安装 gulp： $ npm install --global gulp
 //2. 作为项目的开发依赖（devDependencies）安装：$ npm install --save-dev gulp
 //3. 在项目根目录下创建一个名为 gulpfile.js 的文件：var gulp = require('gulp');
@@ -31,8 +37,6 @@ var autoprefixer = require('autoprefixer'); // npm install --save-dev autoprefix
  */
 var sass = require('gulp-sass');
 
-
-var cssName = "pages";
 var fs = require("fs");
 var dirs = fs.readdirSync("./src");
 var dirName = dirs.length > 0 ? dirs[0] : "miniApp";
@@ -44,8 +48,6 @@ var paths = {
 	scssPath: [`./src/${dirName}/scss/**/*.scss`],
 };
 
-
-//scss合并css文件
 gulp.task("scss", function () {
 
 	gulp.src(paths.scssPath)

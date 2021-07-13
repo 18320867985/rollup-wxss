@@ -1,0 +1,40 @@
+<view>
+  <view class="m-list-ttl">右侧无箭头</view>
+        <view class="m-list">
+            <view class="m-list-item">
+                列表1
+            </view>
+            <view class="m-list-item">
+                列表2
+            </view>
+            <view class="m-list-item">
+                列表3
+            </view>
+        </view>
+
+        <view class="m-list-ttl">右侧带箭头</view>
+        <view class="m-list m-list-arrow">
+            <view class="m-list-item ">
+                列表1
+            </view>
+            <view class="m-list-item">
+                列表2
+            </view>
+            <view class="m-list-item">
+                列表3
+            </view>
+        </view>
+
+        <view class="m-list-ttl">圆角列表</view>
+        <view class="m-list m-list-radius">
+            <view class="m-list-item ">
+                列表1
+            </view>
+            <view class="m-list-item">
+                列表2
+            </view>
+            <view class="m-list-item">
+                列表3
+            </view>
+        </view>
+</view>

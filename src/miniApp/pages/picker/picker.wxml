@@ -1,0 +1,70 @@
+<view class="m-list">
+  <view class="m-list-item"> <view>普通选择器</view></view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+        <picker  class="m-picker" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="m-picker-cont">
+            <text class="m-picker-ttl">当前选择：</text> 
+            <text class="m-picker-val">{{array[index]}}</text>
+          </view>
+        </picker>
+      </view>
+  </view>
+</view>
+
+<view class="m-list">
+  <view class="m-list-item"> <view>多列选择器</view></view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+      <picker class="m-picker" mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="m-picker-cont">
+          <text class="m-picker-ttl">当前选择：</text> 
+            <text class="m-picker-val">{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}</text>
+      
+        </view>
+      </picker>
+      </view>
+  </view>
+</view>
+
+<view class="m-list">
+  <view class="m-list-item"> <view>时间选择器</view></view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+      <picker class="m-picker"  mode="time" value="{{time}}" start="00:01" end="23:59" bindchange="bindTimeChange">
+        <view class="m-picker-cont">
+          <text class="m-picker-ttl">当前选择：</text> 
+            <text class="m-picker-val">{{time}}</text>
+        </view>
+      </picker>
+      </view>
+  </view>
+</view>
+
+<view class="m-list">
+  <view class="m-list-item"> <view>日期选择器</view></view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+      <picker class="picker" mode="date" value="{{date}}" start="1970-01-01" end="2050-01-01" bindchange="bindDateChange">
+        <view class="picker-cont">
+          <text class="m-picker-ttl">当前选择：</text> 
+          <text class="m-picker-val">{{date}}</text>
+        </view>
+      </picker>
+      </view>
+  </view>
+</view>
+
+<view class="m-list">
+  <view class="m-list-item"> <view>省市区选择器</view></view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+      <picker class="m-picker"  mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <view class="m-picker-cont">
+            <text class="m-picker-ttl">当前选择：</text> 
+            <text class="m-picker-val">{{region[0]}}，{{region[1]}}，{{region[2]}}</text>
+          </view>
+        </picker>
+      </view>
+  </view>
+</view>

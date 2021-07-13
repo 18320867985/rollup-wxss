@@ -1,0 +1,29 @@
+
+  <view class="m-input-group">
+                <view class="m-input">
+                    <label class="m-input-label" >用户名</label>
+                    <input  class="m-input-box" type="text" name="name" value="" placeholder="输入用户名" />
+                </view>
+                <view class="m-input">
+                    <label class="m-input-label">密码</label>
+                    <input class="m-input-box" type="password" name="name" value="" placeholder="输入密码" />
+                </view>
+
+                <view class="m-input">
+                    <label class="m-input-label">手机号码</label>
+                    <input class="m-input-box" type="text" name="name" value=""  placeholder="输入手机号码" />
+                    <label  class="m-input-btn" >发送</label>
+
+                </view>
+                <view class="m-input">
+                    <label class="m-input-label">邮箱</label>
+                    <input class="m-input-box" type="text" name="name" value=""  placeholder="输入邮箱" />
+                </view>
+                <view class="m-input">
+                    <label class="m-input-label">地址</label>
+                    <input class="m-input-box" type="text" name="name" value="" placeholder="输入地址" />
+                </view>
+                <view>
+                </view>
+  </view>
+  <button type="button" class="m-btn m-btn-success  m-btn-block" style="margin:60rpx 20rpx;">提交</button>

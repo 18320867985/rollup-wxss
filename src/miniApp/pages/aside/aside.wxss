@@ -1,0 +1,4 @@
+/* pages/aside/aside.wxss */
+page{
+  height: 100%; 
+}

@@ -1,0 +1,115 @@
+@import "../var.scss";
+
+/* picker */
+.m-picker{
+  display: block;
+    &.m-picker-inline{
+      display: inline-block;
+      &+&{
+        margin-left:30rpx;
+      }
+      .m-picker-cont{
+        display: inline-block;
+      }
+    }
+}
+.m-picker-ttl{
+color:$text-gray;
+}
+.m-picker-val{
+color:$text-success;
+}
+
+
+
+/* 自定义-picker组件 */
+.cst-picker {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index:9999;
+  display: none;
+}
+
+.cst-picker.in {
+  display: block;
+}
+
+.cst-picker-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5;
+}
+
+.cst-picker-cont {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  z-index: 9999;
+  height: 50%;
+  background: #fff;
+}
+
+.cst-picker-cont.active {
+  animation: cst-picker 0.5s both;
+}
+
+@keyframes cst-picker {
+  from {
+    bottom: -100%;
+  }
+
+  to {
+    bottom: 0;
+  }
+}
+
+.cst-picker-cont-ttl {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 80rpx;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.cst-picker-cont-ttl ._ok {
+  color: #5cb85c;
+}
+
+.cst-picker-cont-ttl ._cancell, .cst-picker-cont-ttl ._ok {
+  padding: 0 20rpx;
+}
+
+.cst-picker-cont-ttl ._cancell {
+  color: #777;
+}
+
+.cst-picker-view {
+  height: 100%;
+}
+
+.cst-picker-view picker-view-column {
+  height: 100%;
+}
+
+.cst-picker-view picker-view-column .item {
+  padding: 0 20rpx;
+  text-align: center;
+}
+
+.cst-picker-view ._indicator {
+  margin-top: -12rpx;
+  border-top: 1px solid #5cb85c;
+  border-bottom: 1px solid #5cb85c;
+  background: transparent;
+}

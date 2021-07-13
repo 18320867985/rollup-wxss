@@ -1,0 +1,126 @@
+//table-view
+@import "../var.scss";
+
+.m-table-view {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10rpx/$rpx;
+    border: 1px solid $text-border;
+    background: #fff;
+
+    // 圆角table
+    &.m-table-view-rd {
+        border-radius: 10rpx;
+    }
+
+    >.m-table-view-cell {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+        margin-left: 10rpx/$rpx;
+        font-size: 14rpx/$rpx;
+        overflow: hidden;
+
+        &+.m-table-view-cell {
+            border-top: 1px solid #ddd;
+        }
+        >.m-table-view-ttl {
+            width: 100%;
+            display: flex;
+            color: $table-view-color;
+            padding: 5rpx/$rpx 0;
+            ._ttl {
+                display: flex;
+                flex: 1;
+                justify-content: flex-start;
+                align-items: center;
+                text-overflow: ellipsis;
+                padding: 8rpx/$rpx;
+                font-size: 16rpx/$rpx;
+                white-space: nowrap;
+                word-wrap: break-word;
+                overflow-x: hidden;
+            }
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10%;
+            font-size: 36rpx;
+            color: $table-view-icon;
+        }
+
+        .m-table-view-ttl>.icon {
+            transform: rotate(90deg);
+            transition: all .5s;
+        }
+    }
+}
+
+.m-table-view>.m-table-view-cell.in {
+
+    .m-table-view-ttl>.icon {
+        transform: rotate(-90deg);
+    }
+
+    .m-table-view-collapse {
+        display: block; 
+        animation: m-table-view-in 1s ease both;
+    }
+}
+
+@keyframes m-table-view-in {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.m-table-view-collapse {
+    width: 100%;
+    background: $body-bg;
+    display: none;
+    margin-left: 15rpx/$rpx;
+
+    >.m-table-view-collapse-cell {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: flex-start;
+        font-size: 14rpx/$rpx;
+
+        &+.m-table-view-collapse-cell {
+            border-top: 1rpx solid $text-border;
+        }
+        navigator{
+            display: flex;
+            flex: 1 1 auto;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 24rpx 0  24rpx 20rpx;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: break-word;
+            overflow-x: hidden;
+            color: $active;
+            font-size: 28rpx;
+      
+        }
+
+        .icon {
+            display: flex;
+            flex: 0 0 auto;
+            justify-content: center;
+            align-items: center;
+            width: 10%;
+            color: $table-view-icon;
+        }
+    }
+}

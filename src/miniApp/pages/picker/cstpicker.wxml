@@ -1,0 +1,62 @@
+<view class="m-list">
+  <view class="m-list-item"> <view>省市区-选择器</view></view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+      <picker class="m-picker m-picker-inline"  mode="selector" bindchange="bindPickerChange" vvalue="{{provincelist_index}}" range="{{provincelist}}">
+          <view class="m-picker-cont">
+            <text class="m-picker-ttl">选择省区：</text> 
+            <text class="" style=" color: rgb(204, 204, 204); " hidden='{{provincelist[provincelist_index]}}'>选择省</text>
+            <text class="m-picker-val">{{provincelist[provincelist_index]}}</text>
+          </view>
+        </picker>
+        <picker class="m-picker m-picker-inline"bindchange="bindPickerChange2" value="{{index}}" range="{{citylist}}">
+          <view class="m-picker-cont"  >
+            <text class="m-picker-ttl" >选择市区：</text> 
+            <text class="" style=" color: rgb(204, 204, 204); " hidden='{{citylist[citylist_index]}}'>选择市</text>
+            <text class="m-picker-val">{{citylist[citylist_index]}}</text>
+          </view>
+        </picker>
+      </view>
+  </view>
+</view>
+
+<view class="m-list">
+  <view class="m-list-item"> <view>日期-选择器</view></view>
+  <view class="m-list-item">
+    <view class="m-list-item-l">
+      <view class="m-picker" bindtap='cstDate'>
+        <text class="m-picker-ttl">选择日期：</text> 
+        <text class="" style=" color: rgb(204, 204, 204); " hidden='{{date}}'>请选择交货时间</text>
+        <text class="m-picker-val" hidden='{{!date}}'> {{date}}</text>
+      </view>
+  </view>
+</view>
+</view>
+<!-- 自定义 picker 组件 -->
+<view class="cst-picker {{isCstPicker?'in':''}}">
+      <view class="cst-picker-mask" bindtap='cancellCstPicker'></view>
+      <view class="cst-picker-cont {{isCstPicker?'active':''}}">
+        <view class="cst-picker-cont-ttl">
+          <view class="_cancell" bindtap='cancellCstPicker'>
+            取消
+          </view>
+          <view class="_ok" bindtap="cstPickerOk">
+            确定
+          </view>
+        </view>
+        <picker-view class="cst-picker-view" bindchange="cstPickerChange" value="{{pickerIndexList}}" indicator-class="_indicator">
+          <picker-view-column>
+            <view wx:for="{{yList}}" wx:key="index" class="item">{{item}}</view>
+          </picker-view-column>
+
+          <picker-view-column>
+            <view wx:for="{{mList}}" wx:key="index" class="item">{{item}}</view>
+          </picker-view-column>
+
+          <picker-view-column>
+            <view wx:for="{{dList}}" wx:key="index" class="item">{{item}}</view>
+          </picker-view-column>
+
+        </picker-view>
+      </view>
+</view>
