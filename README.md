@@ -1,2 +1,2 @@
-# newSunjinShop
+#微信开发模板
 
